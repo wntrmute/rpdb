@@ -1,0 +1,11 @@
+Test plan
+=========
+
+Input voltage: 8V
+
+1. Set up 8Ω load resistor on motor controller to test 1A through
+   terminal.
+2. Set up a 2x1Ω load resistor network in series with a 4Ω load resistor
+   on the 3.3V rail to supply 733mA, close to 800mA rating.
+3. Move this resistor setup to the 5V rail to test with 1.15A, close to
+   1.1A rating.

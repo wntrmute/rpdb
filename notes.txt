@@ -1,0 +1,20 @@
++ would the pwr kill switch be better placed after the vregs? this avoids
+  the cap drain time (which is currently somewhere on the order of 5s)
++ should the power switches be considered emergency kill switches? they don't
+  have a high enough current rating, so I don't think so.
++ the traces should be a lot wider, maybe 25mm
+
+
+Power limits
++==================+=========+=========+
+| Part             | Voltage | Current |
++==================+=========+=========+
+| L7805            | 35      | 1.2A    |
+| LD1117V33        | 15      | 800mA   |
+| 1000uF cap       | 25      |         |
+| 100uF cap        | 25      |         |
+| 2x8 header       |         | 3A      |
++------------------+---------+---------+
+
+some reading:
++ https://www.electronicdesign.com/power/motor-driver-pcb-layout-guidelines-part-1
